@@ -33,3 +33,5 @@ You remove an entry by specifying the related number.
 
     $ todo clear
 
+
+[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/464db0a106bbc2f6a16cd0d098123518 "githalytics.com")](http://githalytics.com/WelcomWeb/todo-sh)
