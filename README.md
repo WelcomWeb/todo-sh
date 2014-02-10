@@ -33,5 +33,23 @@ You remove an entry by specifying the related number.
 
     $ todo clear
 
+#### Using todo lists local to the working directory
+
+You can have multiple `todo` lists, local to a directory. By appending a `.` to the call to `todo`, the script will only work in the current directory.
+
+    $ todo . add Neat! This will only be available in the local directory!
+
+    	1. Neat! This will only be available in the local directory!
+
+    $ todo
+
+
+
+    $ todo .
+
+    	1. Neat! This will only be available in the local directory!
+
+    $ todo . clear
+
 
 [![githalytics.com alpha](https://cruel-carlota.pagodabox.com/464db0a106bbc2f6a16cd0d098123518 "githalytics.com")](http://githalytics.com/WelcomWeb/todo-sh)

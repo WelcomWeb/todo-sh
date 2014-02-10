@@ -1,28 +1,36 @@
 #!/bin/bash
 
-touch ~/.todo
+TARGET=~/.todo
+
+if [ "$1" = "." ]
+  then
+    TARGET=./.todo
+    shift
+fi
+
+touch $TARGET
 
 if [ $# -eq 0 ]
   then
-    echo ; nl ~/.todo ; echo
+    echo ; nl $TARGET ; echo
 fi
 
 if [ "$1" = "add" ]
   then
     shift
-    echo "$*" >> ~/.todo
-    echo ; nl ~/.todo ; echo
+    echo "$*" >> $TARGET
+    echo ; nl $TARGET ; echo
 fi
 
 if [ "$1" = "remove" ]
   then
-    sed -i.bak -e "$2d" ~/.todo
-    rm ~/.todo.bak
-    echo ; nl ~/.todo ; echo
+    sed -i.bak -e "$2d" $TARGET
+    rm $TARGET.bak
+    echo ; nl $TARGET ; echo
 fi
 
 if [ "$1" = "clear" ]
   then
-    echo "" > ~/.todo
-    echo ; nl ~/.todo ; echo
+    echo "" > $TARGET
+    echo ; nl $TARGET ; echo
 fi
