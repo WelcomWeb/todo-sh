@@ -11,7 +11,7 @@ Copy & paste the line above, and run it in your terminal. The `todo` bash progra
 
 ## Usage
 
-### Show your todo list by simply running `todo` script
+### Show your todo list by simply running `todo`
 
     $ todo
 
@@ -27,10 +27,9 @@ You remove an entry by specifying the related number.
     
         1. Hey, don't forget to feed the fishes
 
-    Â$ todo remove 1
+    $ todo remove 1
 
 ### Clear the todo list
 
     $ todo clear
-
 
