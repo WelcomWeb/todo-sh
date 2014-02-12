@@ -1,7 +1,7 @@
 todo-sh
 =======
 
-A minimal todo list implementation in bash.
+A minimal todo list implementation in bash script.
 
 ### Installation
 
