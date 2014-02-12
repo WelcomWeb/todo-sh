@@ -51,6 +51,17 @@ You can have multiple `todo` lists, local to a directory. By appending a `.` to 
 
     $ todo . clear
 
+#### Automatically fill your `todo` list with data from files using `search`
+
+You can have `todo` searching through, as an example, a project folder and fill the `todo` list with all lines marked with "TODO".
+
+    $ todo . search
+
+        1. file1.js:4:      // TODO: Implement keyboard navigation
+        2. file1.js:26:     // TODO: Clean client localStorage
+        3. file2.js:108:    // TODO: Improve error checking
+
+
 #### Show your todo list at terminal start up
 
 To show your `todo` list directly when opening your terminal, you can tell your shell to run `todo` on start up.
