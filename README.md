@@ -53,7 +53,7 @@ You can have multiple `todo` lists, local to a directory. By appending a `.` to 
 
 #### Show your todo list at terminal start up
 
-To show your `todo` list directly when opening your terminal, you can tell you shell to run `todo` on start up.
+To show your `todo` list directly when opening your terminal, you can tell your shell to run `todo` on start up.
 
 ##### For bash shell, run the following command:
 
