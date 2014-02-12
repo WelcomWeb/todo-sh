@@ -2,9 +2,9 @@
 
 TARGET=~/.todo
 
-if [ "$1" = "." ]
+if [ -d $1 ] && [ $# -gt 0 ]
   then
-    TARGET=./.todo
+    TARGET=$1/.todo
     shift
 fi
 

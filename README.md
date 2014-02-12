@@ -51,6 +51,22 @@ You can have multiple `todo` lists, local to a directory. By appending a `.` to 
 
     $ todo . clear
 
+#### Using todo lists in other directories
+
+`todo` supports other working directories as well, by specifying a folder path as the first argument (that's how `.` works in the above example).
+
+    $ todo ~/projects/my-shiny-project add Hey! This is a reminder for the My Shiny Project.
+
+        1. Hey! This is a reminder for the My Shiny Project.
+
+    $ todo
+
+
+    $ todo ~/projects/my-shiny-project
+
+        1. Hey! This is a reminder for the My Shiny Project.
+        
+
 #### Automatically fill your `todo` list with data from files using `search`
 
 You can have `todo` searching through, as an example, a project folder and fill the `todo` list with all lines marked with "TODO".
