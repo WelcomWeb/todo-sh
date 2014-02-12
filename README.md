@@ -51,5 +51,17 @@ You can have multiple `todo` lists, local to a directory. By appending a `.` to 
 
     $ todo . clear
 
+#### Show your todo list at terminal start up
+
+To show your `todo` list directly when opening your terminal, you can tell you shell to run `todo` on start up.
+
+##### For bash shell, run the following command:
+
+    $ echo "todo" >> ~/.profile
+
+##### For zsh shell, run:
+
+    $ echo "todo" >> ~/.zprofile
+
 
 [![githalytics.com alpha](https://cruel-carlota.pagodabox.com/464db0a106bbc2f6a16cd0d098123518 "githalytics.com")](http://githalytics.com/WelcomWeb/todo-sh)
